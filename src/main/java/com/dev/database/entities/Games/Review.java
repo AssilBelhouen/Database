@@ -12,5 +12,7 @@ public class Review implements Serializable {
     private String title;
     @Column(length = 1000)
     private String description;
-
+    @ManyToOne
+    @JoinColumn(name="game_id")
+    private Game game;
 }

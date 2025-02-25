@@ -19,7 +19,7 @@ public class Game implements Serializable {
     private String publisher;
     private String platform; // to recheck
     private float rating;
-    @OneToMany
+    @OneToMany(mappedBy = "game",cascade = CascadeType.ALL)
     @Column(name = "review")
     private List<Review>Reviews;
 

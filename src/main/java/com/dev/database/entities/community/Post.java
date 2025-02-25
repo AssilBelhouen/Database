@@ -29,7 +29,7 @@ public class Post implements Serializable {
     private List<Asset>assets=new ArrayList<>();
     @ManyToOne
     @JoinColumn(name = "publisher")
-    private User publicher;
+    private User publisher;
 
 
 }
